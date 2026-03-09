@@ -50,8 +50,8 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mb-20"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-8">Our Services</h1>
-            <p className="text-xl text-black/60 leading-relaxed">
+            <h1 className="text-4xl md:text-6xl font-bold mb-8">Our Services</h1>
+            <p className="text-lg text-black/60 leading-relaxed">
               We offer a comprehensive suite of digital services designed to help 
               your business grow, innovate, and lead in your industry.
             </p>
@@ -65,7 +65,7 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="group p-10 bg-brand-secondary rounded-[2rem] border border-black/5 hover:bg-white hover:shadow-2xl transition-all duration-500"
+                className="group p-10 bg-brand-secondary rounded-2xl border border-black/5 hover:bg-white hover:shadow-2xl transition-all duration-500"
               >
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-black group-hover:text-white transition-colors duration-500">
                   {service.icon}
@@ -92,7 +92,7 @@ export default function Services() {
       <section className="section-padding bg-black text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-20">
-            <h2 className="text-4xl font-bold mb-6">Our Process</h2>
+            <h2 className="text-3xl font-bold mb-6">Our Process</h2>
             <p className="text-white/60">How we turn your ideas into digital reality.</p>
           </div>
 

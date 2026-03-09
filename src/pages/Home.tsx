@@ -34,10 +34,10 @@ export default function Home() {
           <span className="inline-block px-4 py-1.5 bg-brand-accent/10 text-brand-accent rounded-full text-xs font-bold tracking-widest uppercase mb-6">
             Digital Excellence
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1]">
+          <h1 className="text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1]">
             We build digital products that <span className="text-black/40">define the future.</span>
           </h1>
-          <p className="text-lg md:text-xl text-black/60 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-black/60 mb-10 max-w-2xl mx-auto leading-relaxed">
             RUFI Studios is a boutique IT agency dedicated to crafting minimal, 
             high-performance digital experiences for forward-thinking brands.
           </p>
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Expertise</h2>
               <p className="text-black/60">We combine technical precision with creative vision to deliver results that matter.</p>
             </div>
             <Link to="/services" className="text-sm font-bold flex items-center gap-2 hover:text-brand-accent transition-colors">
@@ -80,7 +80,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-10 rounded-3xl border border-black/5 hover:shadow-xl hover:-translate-y-1 transition-all"
+                className="bg-white p-10 rounded-2xl border border-black/5 hover:shadow-xl hover:-translate-y-1 transition-all"
               >
                 <div className="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6">
                   {service.icon}
@@ -99,7 +99,7 @@ export default function Home() {
       <section className="section-padding">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
               Why brands choose <br />RUFI Studios
             </h2>
             <div className="space-y-8">
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <div className="aspect-square bg-brand-secondary rounded-3xl overflow-hidden">
+            <div className="aspect-square bg-brand-secondary rounded-2xl overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1000" 
                 alt="Our workspace" 
@@ -141,9 +141,9 @@ export default function Home() {
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-2xl shadow-2xl hidden md:block border border-black/5">
-              <p className="text-4xl font-bold mb-1">50+</p>
-              <p className="text-sm text-black/40 font-medium uppercase tracking-widest">Projects Delivered</p>
+            <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-xl shadow-2xl hidden md:block border border-black/5">
+              <p className="text-3xl font-bold mb-1">50+</p>
+              <p className="text-xs text-black/40 font-medium uppercase tracking-widest">Projects Delivered</p>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="section-padding">
-        <div className="max-w-7xl mx-auto bg-black rounded-[3rem] p-12 md:p-24 text-center text-white overflow-hidden relative">
+        <div className="max-w-7xl mx-auto bg-black rounded-3xl p-12 md:p-24 text-center text-white overflow-hidden relative">
           <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-accent rounded-full blur-[120px]"></div>
           </div>
@@ -161,7 +161,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="relative z-10"
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to start your <br />next digital journey?</h2>
+            <h2 className="text-3xl md:text-6xl font-bold mb-8">Ready to start your <br />next digital journey?</h2>
             <p className="text-white/60 text-lg mb-12 max-w-xl mx-auto">
               Let's build something extraordinary together. Our team is ready to 
               bring your vision to life.

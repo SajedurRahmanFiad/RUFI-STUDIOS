@@ -13,30 +13,30 @@ export default function About() {
               animate={{ opacity: 1, x: 0 }}
             >
               <span className="text-brand-accent font-bold tracking-widest uppercase text-xs mb-4 block">Our Story</span>
-              <h1 className="text-5xl md:text-6xl font-bold mb-8">Crafting digital <br />legacies since 2020.</h1>
-              <p className="text-lg text-black/60 mb-6 leading-relaxed">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8">Crafting digital <br />legacies since 2020.</h1>
+              <p className="text-base text-black/60 mb-6 leading-relaxed">
                 RUFI Studios was founded on a simple principle: digital products should be 
                 as beautiful as they are functional. We started as a small team of 
                 passionate developers and designers who wanted to challenge the status quo.
               </p>
-              <p className="text-lg text-black/60 mb-8 leading-relaxed">
+              <p className="text-base text-black/60 mb-8 leading-relaxed">
                 Today, we are a full-service IT agency helping brands across the globe 
                 navigate the complex digital landscape. Our approach is minimal, 
                 our code is clean, and our results are impactful.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <p className="text-4xl font-bold mb-1">4+</p>
+                  <p className="text-3xl font-bold mb-1">4+</p>
                   <p className="text-sm text-black/40 font-medium uppercase tracking-widest">Years Experience</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold mb-1">100%</p>
+                  <p className="text-3xl font-bold mb-1">100%</p>
                   <p className="text-sm text-black/40 font-medium uppercase tracking-widest">Client Satisfaction</p>
                 </div>
               </div>
             </motion.div>
             <div className="relative">
-              <div className="aspect-[4/5] bg-brand-secondary rounded-[3rem] overflow-hidden">
+              <div className="aspect-[4/5] bg-brand-secondary rounded-3xl overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000" 
                   alt="Our team" 
@@ -53,7 +53,7 @@ export default function About() {
       <section className="section-padding bg-brand-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-20">
-            <h2 className="text-4xl font-bold mb-6">Our Core Values</h2>
+            <h2 className="text-3xl font-bold mb-6">Our Core Values</h2>
             <p className="text-black/60">The principles that guide everything we do.</p>
           </div>
 
@@ -70,7 +70,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-10 rounded-3xl border border-black/5 text-center"
+                className="bg-white p-10 rounded-2xl border border-black/5 text-center"
               >
                 <div className="w-14 h-14 bg-black text-white rounded-2xl flex items-center justify-center mb-6 mx-auto">
                   {value.icon}
@@ -86,7 +86,7 @@ export default function About() {
       {/* Team Section (Simplified) */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-16">The Minds Behind RUFI</h2>
+          <h2 className="text-3xl font-bold mb-16">The Minds Behind RUFI</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               { name: "Sajedur Rahman", role: "Founder & Lead Dev", img: "https://i.pravatar.cc/300?u=sajedur" },

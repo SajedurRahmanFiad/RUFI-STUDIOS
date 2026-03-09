@@ -31,10 +31,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+          <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
             <Cpu className="text-white w-6 h-6" />
           </div>
-          <span className="text-xl font-bold tracking-tight">RUFI STUDIOS</span>
+          <span className="text-lg font-bold tracking-tight">RUFI STUDIOS</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -89,7 +89,7 @@ export default function Navbar() {
           <Link 
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="bg-black text-white px-6 py-3 rounded-xl text-center font-medium"
+            className="bg-black text-white px-6 py-3 rounded-lg text-center font-medium"
           >
             Get in touch
           </Link>

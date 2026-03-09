@@ -23,8 +23,8 @@ export default function Contact() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
             >
-              <h1 className="text-5xl md:text-6xl font-bold mb-8">Let's build <br />something great.</h1>
-              <p className="text-xl text-black/60 mb-12 leading-relaxed">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8">Let's build <br />something great.</h1>
+              <p className="text-lg text-black/60 mb-12 leading-relaxed">
                 Have a project in mind? We'd love to hear about it. 
                 Fill out the form and we'll get back to you within 24 hours.
               </p>
@@ -63,14 +63,14 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-brand-secondary p-8 md:p-12 rounded-[2.5rem] border border-black/5"
+              className="bg-brand-secondary p-8 md:p-12 rounded-2xl border border-black/5"
             >
               {formState === 'success' ? (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
                   <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
                     <Send className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Message Sent!</h3>
+                  <h3 className="text-xl font-bold mb-4">Message Sent!</h3>
                   <p className="text-black/60">
                     Thank you for reaching out. We'll be in touch very soon.
                   </p>
@@ -144,7 +144,7 @@ export default function Contact() {
       <section className="section-padding bg-brand-secondary/50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Common Questions</h2>
+            <h2 className="text-2xl font-bold mb-4">Common Questions</h2>
             <p className="text-black/60">Everything you need to know before we start.</p>
           </div>
           <div className="space-y-4">
