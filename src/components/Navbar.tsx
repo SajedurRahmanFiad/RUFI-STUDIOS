@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Menu, X, Code2, Palette, Globe, Cpu } from 'lucide-react';
+import { Menu, X, Code2, Palette, Globe } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const navLinks = [
@@ -26,15 +26,12 @@ export default function Navbar() {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass py-4 shadow-sm' : 'bg-transparent py-6'
+        scrolled ? 'glass shadow-sm py-4' : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-            <Cpu className="text-white w-6 h-6" />
-          </div>
-          <span className="text-lg font-bold tracking-tight">RUFI STUDIOS</span>
+          <img src="/uploads/Logo.png" alt="RUFI STUDIOS Logo" className="w-23 h-10 group-hover:rotate-12 transition-transform duration-300 rounded-lg" />
         </Link>
 
         {/* Desktop Nav */}
@@ -72,14 +69,14 @@ export default function Navbar() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-full left-0 right-0 bg-white border-b border-black/5 p-6 md:hidden flex flex-col gap-4 shadow-xl"
+          className="absolute text top-full left-0 right-0 bg-white border-b border-black/5 p-6 md:hidden flex flex-col gap-4 shadow-xl"
         >
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className={`text-lg font-medium ${
+              className={`text-md font-medium ${
                 location.pathname === link.path ? 'text-brand-accent' : 'text-black/60'
               }`}
             >

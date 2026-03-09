@@ -15,7 +15,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-12 md:pt-26 pb-20">
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -36,7 +36,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-black/40 uppercase tracking-widest mb-1">Email us</p>
-                    <p className="text-lg font-medium">hello@rufistudios.com</p>
+                    <p className="text-md font-medium">rufistudios@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-center">
@@ -45,7 +45,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-black/40 uppercase tracking-widest mb-1">Call us</p>
-                    <p className="text-lg font-medium">+1 (555) 000-0000</p>
+                    <p className="text-md font-medium">+880 19482 94218</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-center">
@@ -54,7 +54,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-black/40 uppercase tracking-widest mb-1">Visit us</p>
-                    <p className="text-lg font-medium">123 Tech Avenue, Silicon Valley, CA</p>
+                    <p className="text-md font-medium">Uttara, Dhaka - 1230</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Contact() {
                       <input 
                         required
                         type="text" 
-                        placeholder="John Doe"
+                        placeholder="Your nice name"
                         className="w-full bg-white border border-black/5 rounded-2xl px-6 py-4 focus:outline-none focus:border-brand-accent transition-colors"
                       />
                     </div>
@@ -98,7 +98,7 @@ export default function Contact() {
                       <input 
                         required
                         type="email" 
-                        placeholder="john@example.com"
+                        placeholder="Your beautiful email"
                         className="w-full bg-white border border-black/5 rounded-2xl px-6 py-4 focus:outline-none focus:border-brand-accent transition-colors"
                       />
                     </div>
@@ -149,7 +149,7 @@ export default function Contact() {
           </div>
           <div className="space-y-4">
             {[
-              { q: "How long does a typical project take?", a: "Most website projects take 4-8 weeks, while complex web applications can take 3-6 months depending on requirements." },
+              { q: "How long does a typical project take?", a: "Most website projects take 2-8 weeks, while complex web applications can take 1-3 months depending on requirements." },
               { q: "Do you offer maintenance after launch?", a: "Yes, we offer various maintenance packages to ensure your digital product stays secure and up-to-date." },
               { q: "What is your pricing model?", a: "We typically work on a per-project basis with a fixed quote, but we also offer hourly rates for ongoing support." }
             ].map((faq, index) => (

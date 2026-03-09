@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-black/40">
           <p>© {new Date().getFullYear()} RUFI Studios. All rights reserved.</p>
-          <p>Handcrafted with precision.</p>
+          <p>Developed by us, the RUFI Brothers.</p>
         </div>
       </div>
     </footer>

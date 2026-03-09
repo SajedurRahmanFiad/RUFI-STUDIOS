@@ -3,7 +3,7 @@ import { CheckCircle2, Award, Heart, Lightbulb } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-12 md:pt-24 pb-20">
       {/* Story Section */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">
@@ -26,7 +26,7 @@ export default function About() {
               </p>
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <p className="text-3xl font-bold mb-1">4+</p>
+                  <p className="text-3xl font-bold mb-1">6+</p>
                   <p className="text-sm text-black/40 font-medium uppercase tracking-widest">Years Experience</p>
                 </div>
                 <div>
@@ -36,7 +36,7 @@ export default function About() {
               </div>
             </motion.div>
             <div className="relative">
-              <div className="aspect-[4/5] bg-brand-secondary rounded-3xl overflow-hidden">
+              <div className="aspect-[4/5] bg-brand-secondary rounded-2xl overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000" 
                   alt="Our team" 
@@ -83,23 +83,29 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section (Simplified) */}
+      {/* Team Section */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-16">The Minds Behind RUFI</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <h2 className="text-3xl font-bold mb-16">The Minds Behind RUFI Studios</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {[
-              { name: "Sajedur Rahman", role: "Founder & Lead Dev", img: "https://i.pravatar.cc/300?u=sajedur" },
-              { name: "Alex Rivera", role: "Creative Director", img: "https://i.pravatar.cc/300?u=alex" },
-              { name: "Sarah Chen", role: "UX Strategist", img: "https://i.pravatar.cc/300?u=sarah" }
+              { name: "Mohammad Rumman", role: "Founder & Lead Designer", img: "./uploads/rumman.jpeg" },
+              { name: "Md Sajedur Rahman Fiad", role: "Founder & Lead Developer", img: "./uploads/fiad.jpg" },
             ].map((member, index) => (
-              <div key={index} className="group">
-                <div className="aspect-square bg-brand-secondary rounded-full overflow-hidden mb-6 grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-transparent group-hover:border-brand-accent">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white p-6 rounded-2xl shadow-sm border border-black/5 text-center group"
+              >
+                <div className="aspect-square bg-brand-secondary rounded-full overflow-hidden mb-6 grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-transparent group-hover:border-brand-accent mx-auto w-32 h-32 md:w-60 md:h-60">
                   <img src={member.img} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                 </div>
                 <h4 className="text-xl font-bold">{member.name}</h4>
                 <p className="text-black/40 text-sm font-medium uppercase tracking-widest mt-1">{member.role}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

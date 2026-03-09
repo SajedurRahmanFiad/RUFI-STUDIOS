@@ -42,7 +42,7 @@ const serviceList = [
 
 export default function Services() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-12 md:pt-6 pb-20">
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">
           <motion.div

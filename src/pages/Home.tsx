@@ -22,7 +22,7 @@ const services = [
 
 export default function Home() {
   return (
-    <div className="pt-24">
+    <div className="pt-12 md:pt-6">
       {/* Hero Section */}
       <section className="section-padding min-h-[80vh] flex flex-col justify-center items-center text-center">
         <motion.div
