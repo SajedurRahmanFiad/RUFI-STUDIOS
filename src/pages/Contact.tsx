@@ -36,7 +36,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-black/40 uppercase tracking-widest mb-1">Email us</p>
-                    <p className="text-md font-medium">rufistudios@gmail.com</p>
+                    <p className="text-md font-medium">studios.rufi@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-center">
